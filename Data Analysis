@@ -1,0 +1,9 @@
+df['average_score'] = (df['math_score'] + df['science_score']) / 2
+
+print(df.head())top_students = df.sort_values(by='average_score', ascending=False).head(5)
+
+print(top_students)correlation = df['attendance'].corr(df['average_score'])
+
+print("Correlation:", correlation)grouped = df.groupby('gender')['average_score'].mean()
+
+print(grouped)
