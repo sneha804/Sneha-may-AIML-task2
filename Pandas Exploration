@@ -1,0 +1,13 @@
+# Display first 5 rows
+print(df.head())
+
+# Check data types
+print(df.dtypes)
+
+# Find missing values
+print(df.isnull().sum())
+
+# Students with attendance below 70%
+low_attendance = df[df['attendance'] < 70]
+
+print(low_attendance)
