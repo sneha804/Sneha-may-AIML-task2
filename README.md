@@ -1,1 +1,0 @@
-# Sneha-may-AIML-task2
